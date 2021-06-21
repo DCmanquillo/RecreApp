@@ -1,9 +1,25 @@
 .navbar-adultos {
-    background-color: #408A8A;
+    background-color:#27bce9e0;
 }
 .bg-info {
-    background-color: #408a84ee;
+    background-color:#418aeb;
 }
+
+/* body {
+    margin: 0;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:#408A8A;
+    text-align: left;
+    background-color:rgba(15, 155, 148, 0.836);
+} */
+
+/* .nav-pills .nav-link {
+    color:rgba(255, 255, 255, 0.959);
+} */
+
 
 body {
     margin: 0;
@@ -11,11 +27,22 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #408A8A;
+    color: #27bce9e0;
     text-align: left;
-    background-color: rgba(15, 155, 148, 0.836);
+    background-color:#3e8bcacb();
 }
 
-.nav-pills .nav-link {
-    color: rgba(255, 255, 255, 0.959);
+:not(.layout-fixed) .main-sidebar {
+    height: inherit;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+
+background: #1fc4da;
+}
+
+
+ a.nav-link {
+ 
+    background-color: #f1f5f5;
 }
