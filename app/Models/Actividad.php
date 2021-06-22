@@ -23,6 +23,7 @@ protected $fillable = [
         'hora_finalizacion',
         'ent_responsable',
         'lugar_id',
+        'image'
 
    ];
 
