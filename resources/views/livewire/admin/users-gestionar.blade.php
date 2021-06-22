@@ -46,7 +46,7 @@
                                             <button wire:click="destroy({{$user}})" class="btn btn-primary"><i class="fas fa-trash-alt"></i></button>
                                         </div>
                                         <div class="col-lg-4 col-sm-4">
-                                            <button wire:click="destroy({{$user}})" class="btn btn-primary">A</i></button>
+                                            <a  href="{{route('admin.role', $user)}}" class="btn btn-primary"><i class="fas fa-user-tag"></i></a>
                                         </div>
                                 </td>
                             </tr>

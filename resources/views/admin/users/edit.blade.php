@@ -3,6 +3,7 @@
 @section('title', 'RecreAdultos')
 
 @section('content_header')
+
     <h1 class="text-center">Actualizar Persona</h1> <br>
 
 
@@ -68,8 +69,8 @@
                      <input id="roles_id" name="roles_id" placeholder="" type="int" required class="form-control" value="{{$user->roles_id}}">
                 </div>
     </div>
- 
-    
+
+
 
 
 

@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Role;
+use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
-
-class UserController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-
-        return view('admin.users.gestionar');
+        //
     }
 
     /**
@@ -28,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('admin.users.create');
+        //
     }
 
     /**
@@ -39,7 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-       //
+        //
     }
 
     /**
@@ -59,10 +57,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit ($id)
+    public function edit(User $user)
     {
-        $user = User::find($id);
-        return view('admin.users.edit', compact('user'));
+        $roles = Role::all();
+
+        return view('admin.users.role', compact('user', 'roles'));
     }
 
     /**
@@ -72,24 +71,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
-     $edUser = User::find($id);
-     $edUser->name = $request->name;
-     $edUser->apellido = $request->apellido;
-     $edUser->tipo_documento = $request->tipo_documento;
-     $edUser->numero_documento = $request->numero_documento;
-     $edUser->fecha_nacimiento = $request->fecha_nacimiento;
-     $edUser->telefono = $request->telefono;
-     $edUser->genero = $request->genero;
-     $edUser->roles_id=$request->roles_id;
-     $edUser->save();
-     return redirect()->route('admin.users.index')->with('success','Registro actualizado satisfactoriamente');
+        $user->roles()->sync($request->roles);
 
-
-
-
+        return redirect()->route('admin.role',$user)->with('info', 'se asigno los reoles satisfactoriamente');
     }
 
     /**
@@ -98,10 +84,8 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)
     {
-        $user->delete();
-        return redirect()->route('user.index');
+        //
     }
-
 }
