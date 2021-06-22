@@ -234,13 +234,7 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 2,
-            'label_color' => 'blanco-menu',
-        ],
+        
         ['header' => '
 
         '],

@@ -54,7 +54,6 @@ class UsersCreate extends Component
             'roles_id'=>$this->roles_id,
 
 
-
         ]);
         session()->flash('message', 'usuario registrado correctamente');
       }else {

@@ -60,7 +60,7 @@ class activController extends Controller
         $actividad = Actividad::find($id);
         //$actividad->lugar_id = lugar::all();
         $lugares = lugar::all();
-    
+
         return view('Activ.edit', compact('actividad','lugares'));
     }
 
@@ -74,15 +74,15 @@ class activController extends Controller
     public function update(Request $request, $id)
     {
         $edactividad = Actividad::find($id);
-        echo($edactividad->nombactividad); 
-        echo($request->post('nombactividad')); 
-        echo($request->post('fecha_inicio')); 
-        echo($request->post('fecha_cierre')); 
-        echo($request->post('hora_inicio')); 
+        echo($edactividad->nombactividad);
+        echo($request->post('nombactividad'));
+        echo($request->post('fecha_inicio'));
+        echo($request->post('fecha_cierre'));
+        echo($request->post('hora_inicio'));
         echo($request->post('hora_finilizacion'));
-        echo($request->post('ent_responsable')); 
-        echo($request->post('lugar_id'));  
-        
+        echo($request->post('ent_responsable'));
+        echo($request->post('lugar_id'));
+
         $edactividad->nombactividad = $request->post('nombactividad');
         $edactividad->fecha_inicio = $request->post('fecha_inicio');
         $edactividad->fecha_cierre = $request->post('fecha_cierre');
@@ -102,7 +102,7 @@ class activController extends Controller
      */
     public function destroy(Actividad $actividades)
     {
-        $actividad->delete();
+        $actividades->delete();
         return redirect()->route('Activ.index');
     }
 }
