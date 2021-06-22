@@ -36,28 +36,28 @@
               <li class="nav-item dropdown fw-bold  d-flex">
                 <a class="nav-link align-self-center   dropdown-toggle"  style="color:#000" href="#" id="navbarDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nuestro proposito
+                  NUESTRO PROPOSITO
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Visión</a></li>
                   <li><a class="dropdown-item" href="#">Misión</a></li>
-                  <li><a class="dropdown-item" href="#">Nuestro proposito</a></li>
+                  <li><a class="dropdown-item" href="#">Nuestro Proposito</a></li>
 
                 </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item d-flex">
                 <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                target="_blank"  href="{{route('actividad')}}">Actividades</a>
+                target="_blank"  href="{{route('actividad')}}">ACTIVIDADES</a>
               </li>
 
 
               <li class="nav-item dropdown  d-flex">
                 <a class="nav-link align-self-center dropdown-toggle" style="color: #000" href="#" id="navbarDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Personas mayores
+                  PERSONAS MAYORES
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Me quedo en casa</a></li>
+                  <li><a class="dropdown-item" href="#">ME QUEDO EN CASA</a></li>
                   <li><a class="dropdown-item" href="#">Noticias</a></li>
                   <li><a class="dropdown-item" href="#">Cifras</a></li>
                   <li><a class="dropdown-item" href="#">Documentos</a></li>
@@ -65,22 +65,22 @@
               </li>
               <li class="nav-item d-flex">
                 <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                  href="#">Contactanos</a>
+                  href="#">CONTACTOS</a>
               </li>
 
               @if (Route::has('login'))
               <div class="justify-content-end">
                   @auth
 
-                      <a href="{{ url('/dashboard') }}" class="btn btn-info btn-block" class="text-end">Dashboard</a>
+                      <a href="{{ url('/dashboard') }}" class="btn btn-info btn-block" class="text-end">TABLERO</a>
                   @else
               </div>
 
                       <div class="text-end">
-                          <a href="{{ route('login') }}" class="btn btn-info btn-block">Iniciar sesión</a>
+                          <a href="{{ route('login') }}" class="btn btn-info btn-block">INICIAR SESIÓN</a>
 
                       @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="btn btn-info btn-block" >Registrarse</a>
+                          <a href="{{ route('register') }}" class="btn btn-info btn-block" >REGISTRARSE</a>
                       @endif
                       </div>
                   @endauth
