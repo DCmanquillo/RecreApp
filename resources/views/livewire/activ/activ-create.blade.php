@@ -63,11 +63,31 @@
             </div>
           </div>
 
+          <div class="form-group col-sm-12 col-md-6 col-lg-6">
+            <input type="file" wire:model = "image">
+          </div>
+
     </div>
-    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div wire:loading wire:target="image" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <strong class="font-bold">Imagen cargando!</strong>
+                <span class="block sm:inline">Espere hasta que la imagen cargue.</span>
+                
+            </div>
+            @if ($image)
+                <img src = "{{$image->temporaryUrl()}}" >
+            @endif
+        </div>
+    </div>
+    
 
     <div class="d-flex justify-content-center">
-        <button wire:click="store"  class=" btn btn-primary">Registar Actividad</button>
+        <button wire:click="store"  wire:loading.attr= "disabled" wire:target="store, image" class=" btn btn-primary">Registar Actividad</button>
+        @error('imagen') <span class="error">{{ $message }}</span> @enderror
     </div>
+
+
 
 </div

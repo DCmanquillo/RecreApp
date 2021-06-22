@@ -102,7 +102,7 @@ class activController extends Controller
      */
     public function destroy(Actividad $actividades)
     {
-        $actividad->delete();
+        $actividades->delete();
         return redirect()->route('Activ.index');
     }
 }
