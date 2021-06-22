@@ -16,6 +16,7 @@ class CreateActividadsTable extends Migration
         Schema::create('actividads', function (Blueprint $table) {
             $table->Increments('id');
             $table->string('nombactividad');
+            $table->string('imagen');
             $table->date('fecha_inicio');
             $table->date('fecha_cierre');
             $table->time('hora_inicio');
@@ -28,7 +29,6 @@ class CreateActividadsTable extends Migration
             $table->timestamps();
             $table->foreign('lugar_id')->references('id')->on('lugars');
             $table->foreign('perfil_instructors_id')->references('id')->on('perfil_instructors');
-            $table->foreign('tipo_actividads_id')->references('id')->on('tipo_actividads');
         });
     }
 

@@ -73,7 +73,7 @@
         <div class="row">
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Fecha Nacimiento</label>
-                <input type="text" id="fecha nacimiento" name="fecha nacimiento" placeholder="fecha de nacimiento" type="text" required class="form-control" value="" wire:model="fecha_nacimiento">
+                <input type="date" id="fecha nacimiento" name="fecha nacimiento" placeholder="fecha de nacimiento" type="text" required class="form-control" value="" wire:model="fecha_nacimiento">
                 @error('fecha_nacimiento') <span class="error">{{ $message }}</span> @enderror
             </div>
            <div class="form-group col-sm-12 col-md-6 col-lg-6">
