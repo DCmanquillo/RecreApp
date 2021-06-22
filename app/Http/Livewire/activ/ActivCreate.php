@@ -5,11 +5,12 @@ namespace App\Http\Livewire\Activ;
 use Livewire\Component;
 use App\Models\Actividad;
 use App\Models\lugar;
+use Livewire\WithFileUploads;
 
 class ActivCreate extends Component
 {
-
-    public $nombactividad, $fecha_inicio, $fecha_cierre, $hora_inicio, $hora_finalizacion, $ent_responsable, $lugar_id;
+    use WithFileUploads;
+    public $nombactividad, $fecha_inicio, $fecha_cierre, $hora_inicio, $hora_finalizacion, $ent_responsable, $lugar_id, $image;
     //validaciones
     protected $rules = [
 
@@ -19,6 +20,7 @@ class ActivCreate extends Component
         'hora_inicio' => 'required',
         'hora_finalizacion' => 'required',
         'ent_responsable' => 'required',
+        'image' => 'required|image|max:2048'
 
 
     ];
@@ -40,6 +42,8 @@ class ActivCreate extends Component
     public function store()
     {
         $validatedData = $this->validate();
+
+       $image =  $this->image->store('actividades');
         if ($validatedData) {
             Actividad::create([
                 'nombactividad' => $this->nombactividad,
@@ -49,8 +53,7 @@ class ActivCreate extends Component
                 'hora_finalizacion' => $this->hora_finalizacion,
                 'ent_responsable' => $this->ent_responsable,
                 'lugar_id' => $this->lugar_id,
-
-
+                'image' => $image
             ]);
 
             session()->flash('message', 'Actividad registrada correctamente');
@@ -67,6 +70,7 @@ class ActivCreate extends Component
                 'hora_inicio',
                 'hora_finalizacion',
                 'ent_responsable',
+                'image'
 
 
             ]);

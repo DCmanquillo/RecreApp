@@ -39,7 +39,7 @@
                     </a>
                 @endif
 
-                <x-jet-button class="ml-4">
+                <x-jet-button class="btn btn-info btn-info-ml-4">
                     {{ __('Ingresar') }}
                 </x-jet-button>
             </div>

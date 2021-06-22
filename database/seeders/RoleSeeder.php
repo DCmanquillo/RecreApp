@@ -20,7 +20,7 @@ class RoleSeeder extends Seeder
         $roleInstructor = Role::create([ 'name' => 'Instructor']);
         $roleAdultoMayor = Role::create([ 'name' => 'AdultoMayor']);
 
-        //crear los permisos
+        //crear los permisos //syncRoles sirve para agregar el permiso a muchos roles
         Permission::create([ 'name' => 'admin.home'])->syncRoles([ $roleAdmin]);//permiso para entrar al dashboard
         Permission::create([ 'name' => 'admin.users.index'])->assignRole($roleAdmin);//permiso para ver la lista de usuarios
 
