@@ -43,15 +43,14 @@
                   <li><a class="dropdown-item" href="#">MISIÓN</a></li>
 
                 </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item d-flex">
-                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                target="_blank"  href="{{route('actividad')}}">ACTIVIDADES</a>
-              </li>
+                <li class="nav-item d-flex">
+                    <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                    href="{{route('actividad')}}">ACTIVIDADES</a>
+                  </li>
 
 
               <li class="nav-item dropdown  d-flex">
-                <a class="nav-link align-self-center dropdown-toggle" style="color: #000" href="#" id="navbarDropdown"
+                <a class="nav-link align-self-center dropdown-toggle" style="color:#f3811f;" href="#" id="navbarDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PERSONAS MAYORES
                 </a>
@@ -63,7 +62,7 @@
                 </ul>
               </li>
               <li class="nav-item d-flex">
-                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                <a class="nav-link align-self-center active me-3" style="color:#f3811f;" aria-current="page"
                   href="{{route('contactos')}}">CONTACTOS</a>
               </li>
 

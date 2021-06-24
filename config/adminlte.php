@@ -234,7 +234,7 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        
+
         ['header' => '
 
         '],
@@ -317,7 +317,19 @@ return [
 
         ],
 
+        [
+            'text' => 'Beneficiario',
+            'icon' => 'fas fa-users-cog',
+            'submenu' => [
+                [
+                    'text' => 'Registrar Actividad',
+                    'route'  => 'Instructor.create',
+                ],
 
+            ]
+
+
+        ],
 
         [
             'text' => 'Notificaciones',
