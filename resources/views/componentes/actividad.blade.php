@@ -2,7 +2,7 @@
 
 @section('contenido-principal')
 
-<h1>Actividades</h1>
+
     <table class="table">
         <thead>
         <tr>
@@ -14,11 +14,12 @@
         </thead>
         <tbody>
 
-                <tr>
-                    <th scope="row">{{$vrActividad->id}}</th>
+                {{-- <tr>
+
+                    <td>{{$vrActividad->nombactividad}}</td>
                     <td>{{$vrActividad->imagen}}</td>
-                    <td>{{$vrActividad->tipo_actividades}}</td>
-                    <td>{{$vrActividad->observaciones}}</td>
+                    <td>{{$vrActividad->fecha_inicio}}</td>
+                    <td>{{$vrActividad->lugar_id}}</td> --}}
 
 
                     <div class="col-sm-4">
@@ -26,8 +27,9 @@
                           <div class="card-body bg-info">
                             <img src="" class="w-100">
                         <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-info"> Calificación </li>
-                        <li class="list-group-item bg-info">tarifa </li>
+                        <li class="list-group-item bg-info">Nombre</li>
+                        <li class="list-group-item bg-info">Imagen</li>
+                        <li class="list-group-item bg-info">Fecha</li>
                         <a href=""> <button type="button" class="btn btn-warning btn-sm">Mi comentario</button></a>
 
                            <!-- Button trigger modal -->

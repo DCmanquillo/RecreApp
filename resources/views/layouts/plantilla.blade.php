@@ -20,7 +20,7 @@
     <i class="fa-solid fa-house"></i>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="img/logo1.png" class="img-fluid" width="180px" height="120px" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="img/logo1.png" class="img-fluid" width="230px" height="180px" alt=""></a>
           <!-- <a class="navbar-brand" href="#">RecreAdultos</a> -->
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -39,9 +39,8 @@
                   NUESTRO PROPOSITO
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Visión</a></li>
-                  <li><a class="dropdown-item" href="#">Misión</a></li>
-                  <li><a class="dropdown-item" href="#">Nuestro Proposito</a></li>
+                  <li><a class="dropdown-item" href="#">VISIÓN</a></li>
+                  <li><a class="dropdown-item" href="#">MISIÓN</a></li>
 
                 </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -58,14 +57,14 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">ME QUEDO EN CASA</a></li>
-                  <li><a class="dropdown-item" href="#">Noticias</a></li>
-                  <li><a class="dropdown-item" href="#">Cifras</a></li>
-                  <li><a class="dropdown-item" href="#">Documentos</a></li>
+                  <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
+                  <li><a class="dropdown-item" href="#">CIFRAS</a></li>
+                  <li><a class="dropdown-item" href="#">DOCUMENTOS</a></li>
                 </ul>
               </li>
               <li class="nav-item d-flex">
                 <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                  href="#">CONTACTOS</a>
+                  href="{{route('contactos')}}">CONTACTOS</a>
               </li>
 
               @if (Route::has('login'))
@@ -77,10 +76,10 @@
               </div>
 
                       <div class="text-end">
-                          <a href="{{ route('login') }}" class="btn btn-info btn-block">INICIAR SESIÓN</a>
+                          <a href="{{ route('login') }}" class="btn btn-info btn-block " style="background-color: #0B1054; color: aliceblue;">INICIAR SESIÓN</a>
 
                       @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="btn btn-info btn-block" >REGISTRARSE</a>
+                          <a href="{{ route('register') }}" class="btn btn-info btn-block" style="background-color: #1A962B; color: aliceblue;" >REGISTRARSE</a>
                       @endif
                       </div>
                   @endauth
