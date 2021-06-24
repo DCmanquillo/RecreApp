@@ -249,14 +249,17 @@ return [
         [
             'text' => 'Usuarios',
             'icon' => 'fas fa-users',
+            'can' => 'admin.users.create',
             'submenu' => [
                 [
                     'text' => 'Registrar Usuarios',
                     'route'  => 'admin.users.create',
+                    'can' => 'admin.users.create'
                 ],
                 [
                     'text'  => 'Gestionar Usuarios',
                     'route'   => 'admin.users.index',
+                    'can' => 'admin.users.index'
                 ]
 
             ]
@@ -270,10 +273,12 @@ return [
                 [
                     'text' => 'Registrar Actividad',
                     'route'  => 'Activ.create',
+                    'can' => 'Activ.create'
                 ],
                 [
                     'text'  => 'Gestionar Actividad',
                     'route'   => 'Activ.index',
+                    'can' => 'Activ.index'
                 ]
 
             ]
@@ -288,10 +293,12 @@ return [
                 [
                     'text' => 'Registrar Lugar',
                     'route'  => 'lugar.create',
+                    'can' => 'lugar.create'
                 ],
                 [
                     'text'  => 'Gestionar Lugar',
                     'route'   => 'lugar.index',
+                    'can' => 'lugar.index'
                 ]
 
             ]

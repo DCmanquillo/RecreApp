@@ -28,6 +28,20 @@ class UserSeeder extends Seeder
 
         ])->assignRole('Admin');
 
+        User::create([
+            'name' => 'david',
+            'apellido' => 'Campo',
+            'email' => 'david@gmail.com',
+            'password' => bcrypt('admin0000'),
+            'numero_documento' => '11013131',
+            'tipo_documento' => 'cedula',
+            'fecha_nacimiento' => '23/12/0000',
+            'telefono' => '3107804134',
+            'genero' => 'masculino',
+            'roles_id' =>'1'
+
+        ])->assignRole('Instructor');
+
         User::factory(0)->create();
     }
 }

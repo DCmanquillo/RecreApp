@@ -21,11 +21,15 @@ class RoleSeeder extends Seeder
         $roleAdultoMayor = Role::create([ 'name' => 'AdultoMayor']);
 
         //crear los permisos //syncRoles sirve para agregar el permiso a muchos roles
-        Permission::create([ 'name' => 'admin.home'])->syncRoles([ $roleAdmin]);//permiso para entrar al dashboard
-        Permission::create([ 'name' => 'admin.users.index'])->assignRole($roleAdmin);//permiso para ver la lista de usuarios
-
-        Permission::create([ 'name' => 'Activ.listar'])->syncRoles([ $roleInstructor]);//permiso para entrar al dashboard
-        Permission::create([ 'name' => 'Activ.create'])->assignRole($roleInstructor);//permiso para ver la lista de usuarios
+        Permission::create([ 'name' => 'admin.home'])->syncRoles([ $roleAdmin,$roleInstructor]);//permiso para entrar al dashboard
+        Permission::create([ 'name' => 'admin.users.index'])->syncRoles([$roleAdmin]);//permiso para ver la lista de usuarios
+        Permission::create([ 'name' => 'admin.users.create'])->syncRoles([$roleAdmin]);
+        //rutas de actividad
+        Permission::create([ 'name' => 'Activ.create'])->syncRoles([$roleAdmin]);
+        Permission::create([ 'name' => 'Activ.index'])->syncRoles([$roleAdmin,$roleInstructor]);
+        //rutas de lugares
+        Permission::create([ 'name' => 'lugar.create'])->syncRoles([$roleAdmin]);
+        Permission::create([ 'name' => 'lugar.index'])->syncRoles([$roleAdmin]);
 
 
     }

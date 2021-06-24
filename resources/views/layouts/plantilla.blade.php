@@ -1,154 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-  <link rel="icon" href="img/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <title>RecreAdultos</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <i class="fa-solid fa-house"></i>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="img/logo1.png" class="img-fluid" width="230px" height="180px" alt=""></a>
-          <!-- <a class="navbar-brand" href="#">RecreAdultos</a> -->
+            <a class="navbar-brand" href="#"><img src="img/logo1.png" class="img-fluid" width="230px" height="180px"
+                    alt=""></a>
+            <!-- <a class="navbar-brand" href="#">RecreAdultos</a> -->
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <li><a target="_blank" href="#"><i style="color: #1fa1a2; font-size: 30px" class="icon-home" title="INICIO"></i></a> </li>
-                </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <li><a target="_blank" href="#"><i style="color: #1fa1a2; font-size: 30px" class="icon-home"
+                                title="INICIO"></i></a> </li>
+                    </li>
 
-              <li class="nav-item dropdown fw-bold  d-flex">
-                <a class="nav-link align-self-center   dropdown-toggle"  style="color:#000" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  NUESTRO PROPOSITO
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">VISIÓN</a></li>
-                  <li><a class="dropdown-item" href="#">MISIÓN</a></li>
+                    <li class="nav-item dropdown fw-bold  d-flex">
+                        <a class="nav-link align-self-center   dropdown-toggle" style="color:#000" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NUESTRO PROPOSITO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">VISIÓN</a></li>
+                            <li><a class="dropdown-item" href="#">MISIÓN</a></li>
 
-                </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item d-flex">
-                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                target="_blank"  href="{{route('actividad')}}">ACTIVIDADES</a>
-              </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-flex">
+                                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                                    target="_blank" href="{{ route('actividad') }}">ACTIVIDADES</a>
+                            </li>
 
 
-              <li class="nav-item dropdown  d-flex">
-                <a class="nav-link align-self-center dropdown-toggle" style="color: #000" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  PERSONAS MAYORES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">ME QUEDO EN CASA</a></li>
-                  <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
-                  <li><a class="dropdown-item" href="#">CIFRAS</a></li>
-                  <li><a class="dropdown-item" href="#">DOCUMENTOS</a></li>
-                </ul>
-              </li>
-              <li class="nav-item d-flex">
-                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                  href="{{route('contactos')}}">CONTACTOS</a>
-              </li>
+                            <li class="nav-item dropdown  d-flex">
+                                <a class="nav-link align-self-center dropdown-toggle" style="color: #000" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PERSONAS MAYORES
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">ME QUEDO EN CASA</a></li>
+                                    <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
+                                    <li><a class="dropdown-item" href="#">CIFRAS</a></li>
+                                    <li><a class="dropdown-item" href="#">DOCUMENTOS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                                    href="{{ route('contactos') }}">CONTACTOS</a>
+                            </li>
 
-              @if (Route::has('login'))
-              <div class="justify-content-end">
-                  @auth
+                            @if (Route::has('login'))
+                                <div class="justify-content-end">
+                                    @auth
+                                        @can('admin.home')
+                                          <a href="{{ route('admin.home') }}" class="btn btn-info btn-block"class="text-end">TABLERO
+                                          </a>
+                                        @endcan
+                                    @else
+                                    </div>
 
-                      <a href="{{ url('/dashboard') }}" class="btn btn-info btn-block" class="text-end">TABLERO</a>
-                  @else
-              </div>
+                                    <div class="text-end">
+                                        <a href="{{ route('login') }}" class="btn btn-info btn-block "
+                                            style="background-color: #0B1054; color: aliceblue;">INICIAR SESIÓN</a>
 
-                      <div class="text-end">
-                          <a href="{{ route('login') }}" class="btn btn-info btn-block " style="background-color: #0B1054; color: aliceblue;">INICIAR SESIÓN</a>
-
-                      @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="btn btn-info btn-block" style="background-color: #1A962B; color: aliceblue;" >REGISTRARSE</a>
-                      @endif
-                      </div>
-                  @endauth
-              </div>
-          @endif
+                                        @if (Route::has('register'))
+                                            <a href="{{ route('register') }}" class="btn btn-info btn-block"
+                                                style="background-color: #1A962B; color: aliceblue;">REGISTRARSE</a>
+                                        @endif
+                                    </div>
+                                @endauth
+            </div>
+            @endif
             </ul>
-          </div>
         </div>
-      </nav>
-      <br>
-</div>
+        </div>
+    </nav>
+    <br>
+    </div>
 
     <main>
         <div class="container">
-             @yield('contenido-principal')
+            @yield('contenido-principal')
         </div>
     </main>
 
     <footer class="bg-light text-dark">
         <div class="container">
-          <nav class="row justify-content-center">
-            <a href="#" class="col-12 col-md-3 text-reset text-uppercase d-flex
+            <nav class="row justify-content-center">
+                <a href="#" class="col-12 col-md-3 text-reset text-uppercase d-flex
             align-items-center justify-content-center mb-3 mb-md-0">
-              <img src="img/logo1.png" alt="logo weston" class="img-logo mr-2">
-            </a>
-            <ul class="col-5 col-md-3 list-unstyled">
-              <li class="font-weight-bold text-uppercase fw-bold"><h5>Instituciones</h5></li>
-              <li><a target="_blank" href="https://www.cauca.gov.co/Paginas/Default.aspx" class="text-reset text-decoration-none">Gobernacion Del Cauca</a></li>
-              <li><a  target="_blank"href="https://www.indeportescauca.gov.co/" class="text-reset text-decoration-none">Indeportes Cauca</a></li>
-              <li><a target="_blank" href="http://www.popayan.gov.co/" class="text-reset text-decoration-none">Alcaldia De Popayán</a></li>
+                    <img src="img/logo1.png" alt="logo weston" class="img-logo mr-2">
+                </a>
+                <ul class="col-5 col-md-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase fw-bold">
+                        <h5>Instituciones</h5>
+                    </li>
+                    <li><a target="_blank" href="https://www.cauca.gov.co/Paginas/Default.aspx"
+                            class="text-reset text-decoration-none">Gobernacion Del Cauca</a></li>
+                    <li><a target="_blank" href="https://www.indeportescauca.gov.co/"
+                            class="text-reset text-decoration-none">Indeportes Cauca</a></li>
+                    <li><a target="_blank" href="http://www.popayan.gov.co/"
+                            class="text-reset text-decoration-none">Alcaldia De Popayán</a></li>
 
 
 
-            </ul>
-            <ul class="col-5 col-md-3 list-unstyled">
-              <li class="font-weight-bold text-uppercase fw-bold "><h5>Hogares Geríatricos</h5></li>
-              <li><a target="_blank" href="https://acaricampestre.org/" class="text-reset text-decoration-none">Casa Campestre</a></li>
-              <li><a target="_blank" href="https://www.saldarriagaconcha.org/indice-personas-mayores/?gclid=CjwKCAjwmv-DBhAMEiwA7xYrd0nxedbX6tACrwa6mkWztDOsxUFrCj0bO3cvQhL7kD3Rpt55arzUthoCgOQQAvD_BwE " class="text-reset text-decoration-none">Fundacion Saldarriaga Concha</a></li>
-              <li><a target="_blank" href="https://www.ancianatosanvicentepopayan.com/" class="text-reset text-decoration-none">Fundacion Hogar San Vicente Paul</a></li>
+                </ul>
+                <ul class="col-5 col-md-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase fw-bold ">
+                        <h5>Hogares Geríatricos</h5>
+                    </li>
+                    <li><a target="_blank" href="https://acaricampestre.org/"
+                            class="text-reset text-decoration-none">Casa Campestre</a></li>
+                    <li><a target="_blank"
+                            href="https://www.saldarriagaconcha.org/indice-personas-mayores/?gclid=CjwKCAjwmv-DBhAMEiwA7xYrd0nxedbX6tACrwa6mkWztDOsxUFrCj0bO3cvQhL7kD3Rpt55arzUthoCgOQQAvD_BwE "
+                            class="text-reset text-decoration-none">Fundacion Saldarriaga Concha</a></li>
+                    <li><a target="_blank" href="https://www.ancianatosanvicentepopayan.com/"
+                            class="text-reset text-decoration-none">Fundacion Hogar San Vicente Paul</a></li>
 
 
-            </ul>
-            <ul class="col-10 col-md-3 list-unstyled">
-              <li class="font-weight-bold text-uppercase"><h5>Redes Sociales</h5></li>
-            <li class="d-flex justify-content-between">
-              <a href="https://www.facebook.com/" class="text-reset">
-                <i class="icon-facebook-squared"style="color:#ffff; font-size: 30px"></i></a>
+                </ul>
+                <ul class="col-10 col-md-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">
+                        <h5>Redes Sociales</h5>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/" class="text-reset">
+                            <i class="icon-facebook-squared" style="color:#ffff; font-size: 30px"></i></a>
 
-              <a target="_blank" href="https://www.instagram.com/" class="text-reset">
-                <i class="fab fa-instagram" style="color:#000; font-size: 30px"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/" class="text-reset">
+                            <i class="fab fa-instagram" style="color:#000; font-size: 30px"></i></a>
 
-              <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="text-reset">
-                <i class="icon-mail" style="color:#ffff; font-size: 30px"></i></a>
+                        <a target="_blank"
+                            href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            class="text-reset">
+                            <i class="icon-mail" style="color:#ffff; font-size: 30px"></i></a>
 
-              <a target="_blank" href="https://www.youtube.com/" class="text-reset">
-                <i class="icon-youtube-play"style="color:#ffff; font-size: 30px"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/" class="text-reset">
+                            <i class="icon-youtube-play" style="color:#ffff; font-size: 30px"></i></a>
 
 
-            </li>
-            </ul>
-          </nav>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
 
-      </footer>
+    </footer>
 
 
 
 
-  </body>
+</body>
 
-  </html>
+</html>
