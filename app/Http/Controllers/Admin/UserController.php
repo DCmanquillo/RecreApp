@@ -15,6 +15,13 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('can:admin.users.index')->only('index');
+        $this->middleware('can:admin.users.create')->only('create');
+    }
+
     public function index()
     {
 
