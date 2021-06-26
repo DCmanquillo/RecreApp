@@ -324,7 +324,20 @@ return [
 
         ],
 
-        
+        [
+            'text' => 'Beneficiario',
+            'icon' => 'fas fa-users-cog',
+            'submenu' => [
+                [
+                    'text' => 'Registrar Actividad',
+                    'route'  => 'Activ.index',
+                ]
+
+            ]
+
+
+        ],
+
 
         [
             'text' => 'Notificaciones',

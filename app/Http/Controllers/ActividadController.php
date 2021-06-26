@@ -12,6 +12,4 @@ class ActividadController extends Controller
         $vrActividad = Actividad::all();
         return view('componentes.actividad', compact('vrActividad'));
     }
-
-
 }
