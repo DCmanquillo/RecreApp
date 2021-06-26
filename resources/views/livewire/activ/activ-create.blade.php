@@ -29,7 +29,7 @@
             </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Hora Inicio</label>
-                <input id="hora inicio" name="hora inicio" placeholder="hora inicio" type="text" required class="form-control" value="" wire:model="hora_inicio">
+                <input id="hora inicio" name="hora inicio" placeholder="hora inicio" type="time" required class="form-control" value="" wire:model="hora_inicio">
                 @error('hora_inicio') <span class="error">{{ $message }}</span> @enderror
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="row">
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Hora Finalizacion</label>
-                <input type="text" name="hora finalizacion" placeholder="hora finalizacion"  required class="form-control" value="" wire:model="hora_finalizacion">
+                <input type="time" name="hora finalizacion" placeholder="hora finalizacion"  required class="form-control" value="" wire:model="hora_finalizacion">
                 @error('hora_finalizacion') <span class="error">{{ $message }}</span> @enderror
             </div>
 
