@@ -22,7 +22,7 @@ class CreateActividadsTable extends Migration
             $table->time('hora_inicio');
             $table->time('hora_finalizacion');
             $table->string('ent_responsable');
-            $table->integer('lugar_id')->unsigned();
+            $table->integer('lugar_id')->unsigned()->nullable();
             $table->integer('perfil_instructors_id')->unsigned()->nullable();
             $table->timestamps();
             $table->foreign('lugar_id')->references('id')->on('lugars');
