@@ -37,8 +37,8 @@ class UserSeeder extends Seeder
             'tipo_documento' => 'cedula',
             'fecha_nacimiento' => '23/12/0000',
             'telefono' => '3107804134',
-            'genero' => 'fmenino',
-            'roles_id' =>'1'
+            'genero' => 'masculino',
+            'roles_id' =>'2'
 
         ])->assignRole('Instructor');
 

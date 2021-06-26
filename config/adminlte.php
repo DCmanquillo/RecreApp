@@ -234,7 +234,7 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        
+
         ['header' => '
 
         '],
@@ -324,7 +324,7 @@ return [
 
         ],
 
-
+        
 
         [
             'text' => 'Notificaciones',

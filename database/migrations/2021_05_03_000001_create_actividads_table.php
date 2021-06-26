@@ -16,16 +16,14 @@ class CreateActividadsTable extends Migration
         Schema::create('actividads', function (Blueprint $table) {
             $table->Increments('id');
             $table->string('nombactividad');
-            $table->string('imagen');
+            $table->string('image');
             $table->date('fecha_inicio');
             $table->date('fecha_cierre');
             $table->time('hora_inicio');
             $table->time('hora_finalizacion');
             $table->string('ent_responsable');
-            $table->integer('lugar_id')->unsigned();
+            $table->integer('lugar_id')->unsigned()->nullable();
             $table->integer('perfil_instructors_id')->unsigned()->nullable();
-            $table->string('image');
-            $table->integer('tipo_actividads_id')->unsigned();
             $table->timestamps();
             $table->foreign('lugar_id')->references('id')->on('lugars');
             $table->foreign('perfil_instructors_id')->references('id')->on('perfil_instructors');

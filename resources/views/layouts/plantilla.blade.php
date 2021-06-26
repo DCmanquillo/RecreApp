@@ -33,6 +33,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -40,38 +41,37 @@
                                 title="INICIO"></i></a> </li>
                     </li>
 
-                    <li class="nav-item dropdown fw-bold  d-flex">
-                        <a class="nav-link align-self-center   dropdown-toggle" style="color:#000" href="#"
-                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            NUESTRO PROPOSITO
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">VISIÓN</a></li>
-                            <li><a class="dropdown-item" href="#">MISIÓN</a></li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" style="color:#000" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 NUESTRO PROPOSITO
+                </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" style="color:#000" href="#">MISIÓN</a></li>
+              <li><a class="dropdown-item" style="color:#000" href="#">VISIÓN</a></li>
+            </ul>
+          </li>
 
-                        </ul>
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item d-flex">
-                                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                                    target="_blank" href="{{ route('actividad') }}">ACTIVIDADES</a>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                            href="{{ route('actividad') }}">ACTIVIDADES</a>
                             </li>
 
 
-                            <li class="nav-item dropdown  d-flex">
-                                <a class="nav-link align-self-center dropdown-toggle" style="color: #000" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PERSONAS MAYORES
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" style="color:#000" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PERSONAS MAYORES
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">ME QUEDO EN CASA</a></li>
-                                    <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
-                                    <li><a class="dropdown-item" href="#">CIFRAS</a></li>
-                                    <li><a class="dropdown-item" href="#">DOCUMENTOS</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" style="color:#000" href="#">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="#">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="#">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="#">DOCUMENTOS</a></li>
                                 </ul>
-                            </li>
+                              </li>
+
                             <li class="nav-item d-flex">
                                 <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
-                                    href="{{ route('contactos') }}">CONTACTOS</a>
+                                    href="{{ route('contactos') }}">CONTACTANOS</a>
                             </li>
 
                             @if (Route::has('login'))

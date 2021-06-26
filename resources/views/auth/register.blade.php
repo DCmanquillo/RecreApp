@@ -32,19 +32,9 @@
                     <div class="mt-4">
                         <x-jet-label for="password_confirmation" value="{{ __('Confirmar Contraseña') }}" />
                         <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-                    </div>
-
-                    <div>
-                        <x-jet-label for="numero_documento" value="{{ __('Numero documento') }}" />
-                        <x-jet-input id="numero_documento" class="block mt-1 w-full" type="text" name="numero_documento" :value="old('numero_documento')" required autofocus autocomplete="numero_documento" />
-                    </div>
-
-                    <div>
-                        <x-jet-label for="tipo_documento" value="{{ __('Tipo documento') }}" />
-                        <x-jet-input id="tipo_documento" class="block mt-1 w-full" type="text" name="tipo_documento" :value="old('tipo_documento')" required autofocus autocomplete="tipo_documento" />
                     </div><br>
 
-                    <select name="Tipo_Documento" class="block mt-1 w-full" >
+                    <select name="tipo_documento" class="block mt-1 w-full" >
                         <option value="">{{ _('Tipo Documento')}}</option>
                         <option value="Cedula ciudadania">{{_('Cedula Ciudadania')}}</option>
                         <option value="Cedula extranjeria">{{_('Cedula Extranjeria')}}</option>
@@ -52,17 +42,24 @@
                     </select><br>
 
                     <div>
+                        <x-jet-label for="numero_documento" value="{{ __('Numero documento') }}" />
+                        <x-jet-input id="numero_documento" class="block mt-1 w-full" type="text" name="numero_documento" :value="old('numero_documento')" required autofocus autocomplete="numero_documento" />
+                    </div><br>
+
+                    <div>
+                        <x-jet-label for="fecha_nacimiento" value="{{ __('Fecha Nacimiento') }}" />
+                        <x-jet-input type="date" id="fecha_nacimiento" class="block mt-1 w-full" type="text" name="fecha_nacimiento" :value="old('fecha_nacimiento')" required autofocus autocomplete="fecha_nacimiento" />
+                    </div>
+                    <div>
                         <x-jet-label for="telefono" value="{{ __('telefono') }}" />
                         <x-jet-input id="telefono" class="block mt-1 w-full" type="text" name="telefono" :value="old('telefono')" required autofocus autocomplete="telefono"/>
                     </div><br>
 
-                    <div>
-                        <select name="Genero" class="block mt-1 w-full" >
-                           <option value="">{{ _('Genero')}}</option>
-                           <option value="Masculino">{{_('Masculino')}}</option>
-                           <option value="Femenino">{{_('Femenino')}}</option>
-                       </select><br>
-                    </div>
+            <select name="genero" class="block mt-1 w-full">
+            <option value="">{{_('Genero')}}</option>
+            <option value="Masculino">{{_('masculino')}}</option>
+            <option value="Femenino">{{_('femenino')}}</option>
+           </select><br>
 
                     @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                         <div class="mt-4">
