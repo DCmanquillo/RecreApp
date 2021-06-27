@@ -1,10 +1,11 @@
 @extends('layouts.plantilla')
 
 @section('contenido-principal')
-
+{{-- {{Asset('public/css.acti.css')}} --}}
+<link href="{{ asset('css/acti.css') }}" rel="stylesheet">
 <div class="container-fluid">
     <div class="row">
-        {{$datosActividad }}
+        {{-- {{$datosActividad }} --}}
         @foreach ($datosActividad as $actividad)
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
