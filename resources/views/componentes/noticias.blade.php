@@ -1,6 +1,7 @@
 @extends('layouts.plantilla')
 
 @section('contenido-principal')
+<link href="{{ asset('css/contac.css') }}" rel="stylesheet">
 <section>
 
     <div class="container text-center text-md-left mt-5">
