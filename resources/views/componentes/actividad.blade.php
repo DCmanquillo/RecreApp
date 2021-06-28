@@ -22,12 +22,9 @@
                     <div class="card-footer">
                         <p>{{$actividad->observacion}}</p>
                     </div>
-                    @foreach ($datoLugar as $lugar)
-                    <div class="card-footer">
-                        <p>{{$lugar->nombre_lugar}}</p>
-                    </div>
-                    @endforeach
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                    <button type="button" class="btn btn-info btn-block "
+                    style="background-color: #0B1054; color: aliceblue;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Registrar Actividad<!doctype html>
                     </button>
                 </div>
@@ -39,7 +36,7 @@
 @endsection
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
@@ -58,7 +55,7 @@
 
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <a href="{{ route('Beneficiario.index') }}" class="btn btn-info btn-block"class="text-end">Guardar</a>
         </div>
     </div>
     </div>

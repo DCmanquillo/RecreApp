@@ -28,9 +28,13 @@ class RoleSeeder extends Seeder
         Permission::create([ 'name' => 'Activ.create'])->syncRoles([$roleAdmin]);
         Permission::create([ 'name' => 'Activ.index'])->syncRoles([$roleAdmin,$roleInstructor]);
         //rutas de lugares
-        Permission::create([ 'name' => 'lugar.create'])->syncRoles([$roleAdmin]);
+        Permission::create([ 'name' => 'lugar.create'])->syncRoles([$roleAdmin, $roleInstructor]);
         Permission::create([ 'name' => 'lugar.index'])->syncRoles([$roleAdmin, $roleInstructor]);
-
+       //rutas de beneficiario
+       Permission::create([ 'name' => 'Beneficiario.index'])->syncRoles([$roleAdultoMayor]);
+      //rutas de Instructor 
+      Permission::create([ 'name' => 'Instructor.create'])->syncRoles([$roleAdmin, $roleInstructor]);
+      Permission::create([ 'name' => 'Instructor.index'])->syncRoles([$roleAdmin, $roleInstructor]);
 
     }
 }

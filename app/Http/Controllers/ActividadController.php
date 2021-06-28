@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Actividad;
-use App\Models\lugar;
+
+use App\Models\Beneficiario;
 
 class ActividadController extends Controller
 {
