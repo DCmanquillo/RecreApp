@@ -6,8 +6,15 @@ use App\Http\Controllers\activController;
 use App\Http\Controllers\lugarController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ContactosController;
+
 use App\Http\Controllers\misionController;
 
+=======
+use App\Http\Controllers\MequedoencasaController;
+use App\Http\Controllers\NoticiasController;
+use App\Http\Controllers\CifrasController;
+use App\Http\Controllers\DocumentosController;
+>>>>>>> 58c840d241ca67c7bebea65d5c752930768c5d9b
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +33,11 @@ Route::get('/', function () {
 Route::get('/actividad' ,[ActividadController::class,'index'])->name('actividad');
 
 Route::get('/contactos' ,[ContactosController::class,'index'])->name('contactos');
+Route::get('/documentos' ,[DocumentosController::class,'index'])->name('documentos');
+Route::get('/cifras' ,[CifrasController::class,'index'])->name('cifras');
+Route::get('/noticias' ,[NoticiasController::class,'index'])->name('noticias');
+Route::get('/quedate' ,[MequedoencasaController::class,'index'])->name('quedate');
+
 
 Route::get('/mision' ,[misionController::class,'index'])->name('mision');
 

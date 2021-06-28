@@ -66,7 +66,7 @@ return [
 
     'usermenu_enabled' => true,
     'usermenu_header' => false,
-    'usermenu_header_class' => 'bg-#3E8E8C',
+    'usermenu_header_class' => 'bg-',
     'usermenu_image' => false,
     'usermenu_desc' => false,
     'usermenu_profile_url' => false,
@@ -106,7 +106,7 @@ return [
     'classes_auth_body' => '',
     'classes_auth_footer' => '',
     'classes_auth_icon' => '',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_btn' => 'btn-flat btn-',
 
     /*
     |--------------------------------------------------------------------------
@@ -123,10 +123,10 @@ return [
     'classes_body' => 'bg-',
     'classes_brand' => 'bg-info',
     'classes_brand_text' => 'text-dark',
-    'classes_content_wrapper' => 'bg- primary',
+    'classes_content_wrapper' => 'bg- black',
     'classes_content_header' => 'bg-',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-primary-elevation-4',
+    'classes_sidebar' => 'sidebar-black-elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-adultos',
     'classes_topnav_nav' => 'navbar-expand',
@@ -168,7 +168,7 @@ return [
 
     'right_sidebar' => false,
     'right_sidebar_icon' => 'fas fa-cogs',
-    'right_sidebar_theme' => 'bg-info',
+    'right_sidebar_theme' => 'bg-black',
     'right_sidebar_slide' => true,
     'right_sidebar_push' => true,
     'right_sidebar_scrollbar_theme' => 'os-theme-light',

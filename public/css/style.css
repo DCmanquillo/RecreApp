@@ -1,5 +1,5 @@
 :root{
-    --primary: #1fa1a2;
+    --primary: #a6f5ff;
     --grey: #f5f5f5;
     --gris: #EBEBEB;
     
@@ -61,7 +61,7 @@
 }
 .btn-light{
     background-color: #1fa1a2;
-    color: #1fa1a2;
+    color: #a6f5ff;
 }
 
 

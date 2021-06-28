@@ -46,8 +46,12 @@
                  NUESTRO PROPOSITO
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<<<<<<< HEAD
               <li><a class="dropdown-item" style="color:#0B1054;" href="{{ route('mision')}}">QUIENES SOMOS</a></li>
 
+=======
+              <li><a class="dropdown-item" style="color:#000" href="#">MISIÓN</a></li>
+>>>>>>> 58c840d241ca67c7bebea65d5c752930768c5d9b
             </ul>
           </li>
 
@@ -62,10 +66,17 @@
                                 PERSONAS MAYORES
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<<<<<<< HEAD
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">ME QUEDO EN CASA</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">NOTICIAS</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">CIFRAS</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">DOCUMENTOS</a></li>
+=======
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('quedate')}}">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('noticias')}}">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('cifras')}}">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('documentos')}}">DOCUMENTOS</a></li>
+>>>>>>> 58c840d241ca67c7bebea65d5c752930768c5d9b
                                 </ul>
                               </li>
 
@@ -150,18 +161,18 @@
                     </li>
                     <li class="d-flex justify-content-between">
                         <a href="https://www.facebook.com/" class="text-reset">
-                            <i class="icon-facebook-squared" style="color:#ffff; font-size: 30px"></i></a>
+                            <i class="icon-facebook-squared" style="color:rgba(50, 38, 216, 0.726); font-size: 30px"></i></a>
 
                         <a target="_blank" href="https://www.instagram.com/" class="text-reset">
-                            <i class="fab fa-instagram" style="color:#000; font-size: 30px"></i></a>
+                            <i class="fab fa-instagram" style="color:rgba(33, 40, 136, 0.404); font-size: 30px"></i></a>
 
                         <a target="_blank"
                             href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
                             class="text-reset">
-                            <i class="icon-mail" style="color:#ffff; font-size: 30px"></i></a>
+                            <i class="icon-mail" style="color:rgba(28, 62, 214, 0.568); font-size: 30px"></i></a>
 
                         <a target="_blank" href="https://www.youtube.com/" class="text-reset">
-                            <i class="icon-youtube-play" style="color:#ffff; font-size: 30px"></i></a>
+                            <i class="icon-youtube-play" style="color:rgba(23, 59, 218, 0.747); font-size: 30px"></i></a>
 
 
                     </li>
