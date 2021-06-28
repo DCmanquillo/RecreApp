@@ -9,12 +9,12 @@ use App\Http\Controllers\ContactosController;
 
 use App\Http\Controllers\misionController;
 
-=======
+
 use App\Http\Controllers\MequedoencasaController;
 use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\CifrasController;
 use App\Http\Controllers\DocumentosController;
->>>>>>> 58c840d241ca67c7bebea65d5c752930768c5d9b
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
