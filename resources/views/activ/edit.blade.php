@@ -13,7 +13,7 @@
 
         <div class="container justify-content-center">
             <div class="row">
-                
+
                 <div class="form-group col-sm-12 col-md-6 col-lg-6">
 
                  <label  class="form-label" for="text">Nombre Actividad</label>
@@ -22,9 +22,6 @@
                     @error('nombactividad') <span class="error">{{ $message }}</span> @enderror
                 </div>
             
-
-
-
                 <div class="form-group col-sm-12 col-md-6 col-lg-6">
                      <label  class="form-label" for="date">Fecha Cierre</label>
                      <input id="Fecha Cierre" name="Fecha Cierre" placeholder="Fecha Cierre" type="text" required class="form-control" value="{{$actividad->fecha_cierre}}">
@@ -32,7 +29,7 @@
         </div>
 
 
-        <div class="row">  
+        <div class="row">
          <div class="form-group col-sm-12 col-md-6 col-lg-6">
             <label  class="form-label" for="text">Fecha Inicio</label>
              <input id="fecha inicio" name="fecha inicio" placeholder="fecha inicio" type="text" required class="form-control" value="{{$actividad->fecha_inicio}}" wire:model="fecha_inicio">
@@ -40,9 +37,9 @@
              </div>
 
 
-           
-         
-                
+
+
+
               <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Fecha cierre</label>
                 <input id="fecha cierre" name="fecha cierre" placeholder="fecha cierre" type="text" required class="form-control" value="{{$actividad->fecha_cierre}}" wire:model="fecha_cierre">
@@ -58,7 +55,7 @@
                     @error('hora_inicio') <span class="error">{{ $message }}</span> @enderror
                 </div>
 
-         
+
 
                 <div class="form-group col-sm-12 col-md-6 col-lg-6">
                      <label  class="form-label" for="text">Hora Finalizacion</label>
@@ -85,7 +82,7 @@
                             <option value="{{$lugar->id}}" >{{$lugar->nombre_lugar}}</option>
                            @endforeach
                           </select>
-            
+
                         </div>
             </div>
         </div>

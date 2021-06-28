@@ -6,7 +6,7 @@ use App\Http\Controllers\activController;
 use App\Http\Controllers\lugarController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ContactosController;
-
+use App\Http\Controllers\misionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +26,8 @@ Route::get('/', function () {
 Route::get('/actividad' ,[ActividadController::class,'index'])->name('actividad');
 
 Route::get('/contactos' ,[ContactosController::class,'index'])->name('contactos');
+
+Route::get('/mision' ,[misionController::class,'index'])->name('mision');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

@@ -77,6 +77,7 @@ class activController extends Controller
         echo($edactividad->nombactividad);
         echo($request->post('nombactividad'));
         echo($request->post('image'));
+        echo($request->post('observacion'));
         echo($request->post('fecha_inicio'));
         echo($request->post('fecha_cierre'));
         echo($request->post('hora_inicio'));
@@ -86,6 +87,7 @@ class activController extends Controller
 
         $edactividad->nombactividad = $request->post('nombactividad');
         $edactividad->nombactividad = $request->post('image');
+        $edactividad->nombactividad = $request->post('observacion');
         $edactividad->fecha_inicio = $request->post('fecha_inicio');
         $edactividad->fecha_cierre = $request->post('fecha_cierre');
         $edactividad->hora_inicio = $request->post('hora_inicio');

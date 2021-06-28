@@ -42,35 +42,35 @@
                     </li>
 
                <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" style="color:#000" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <a class="nav-link dropdown-toggle" style="color:#0B1054;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  NUESTRO PROPOSITO
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" style="color:#000" href="#">MISIÓN</a></li>
-              <li><a class="dropdown-item" style="color:#000" href="#">VISIÓN</a></li>
+              <li><a class="dropdown-item" style="color:#0B1054;" href="{{ route('mision')}}">QUIENES SOMOS</a></li>
+
             </ul>
           </li>
 
                         <li class="nav-item d-flex">
-                            <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                            <a class="nav-link align-self-center active me-3" style="color:#0B1054;" aria-current="page"
                             href="{{ route('actividad') }}">ACTIVIDADES</a>
                             </li>
 
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" style="color:#000" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" style="color:#0B1054;" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 PERSONAS MAYORES
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" style="color:#000" href="#">ME QUEDO EN CASA</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">NOTICIAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">CIFRAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">DOCUMENTOS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">DOCUMENTOS</a></li>
                                 </ul>
                               </li>
 
                             <li class="nav-item d-flex">
-                                <a class="nav-link align-self-center active me-3" style="color:#000" aria-current="page"
+                                <a class="nav-link align-self-center active me-3" style="color:#0B1054;" aria-current="page"
                                     href="{{ route('contactos') }}">CONTACTANOS</a>
                             </li>
 

@@ -15,22 +15,19 @@
       <div class="carousel-item active">
         <img src="img/imagen19.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h4 class="text-dark fw-bold"><a href="#" class="text-light bg-dark text-decoration-none">¿sabes lo importante que es la actividad fisica?</a></h4>
-          <p class="text-dark fw-bold"><a href="#" class="text-light bg-dark text-decoration-none">las actividades resistencia, o aeróbicas, aumentan la respiración y la frecuencia cardíaca. ...</a></p>
+
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/imagen21.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-dark fw-bold"><a href="#" class="text-light bg-dark text-decoration-none">Alcanza las recomendaciones de trabajo aeróbico </a></h5>
-          <p class="text-dark fw-bold"><a href="#" class="text-light bg-dark text-decoration-none">Según la OMS, los mayores de 65 años deben realizar 150 minutos a la semana de actividad física de intensidad moderada, o 75 si es de intensidad vigorosa.</a></p>
+
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/imagen20.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-dark fw-bold"><a href="#" class="text-light bg-dark text-decoration-none">Fortalece los músculos</a></h5>
-          <p ><a href="#" class="text-light bg-dark text-decoration-none">Se deben realizar ejercicios de fuerza, al menos dos días a la semana, para evitar la fragilidad y seguir manteniendo la funcionalidad.</a></p>
+
         </div>
       </div>
     </div>
@@ -48,7 +45,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="content mx-auto px-4 my-5">
-            <img src="img/imag4.jpeg" class="img-fluid">
+            <img src="img/imag4.jpg" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6 d-flex">

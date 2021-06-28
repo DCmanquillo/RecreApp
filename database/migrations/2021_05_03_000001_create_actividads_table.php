@@ -17,6 +17,7 @@ class CreateActividadsTable extends Migration
             $table->Increments('id');
             $table->string('nombactividad');
             $table->string('image');
+            $table->string('observacion');
             $table->date('fecha_inicio');
             $table->date('fecha_cierre');
             $table->time('hora_inicio');

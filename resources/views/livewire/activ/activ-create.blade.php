@@ -34,12 +34,19 @@
             </div>
         </div>
 
+
         <div class="row">
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Hora Finalizacion</label>
                 <input type="time" name="hora finalizacion" placeholder="hora finalizacion"  required class="form-control" value="" wire:model="hora_finalizacion">
                 @error('hora_finalizacion') <span class="error">{{ $message }}</span> @enderror
             </div>
+
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                    <label  class="form-label" for="text">Observacion</label>
+                    <input type="text" name="observacion" placeholder="observacion"  required class="form-control" value="" wire:model="observacion">
+                    @error('observacion') <span class="error">{{ $message }}</span> @enderror
+                </div>
 
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label  class="form-label" for="text">Entidad Responsable</label>
@@ -67,11 +74,6 @@
         </div>
 
     </div>
-
-
-
-
-
 
     <div class="card">
         <div class="card-body">

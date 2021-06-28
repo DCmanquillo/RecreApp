@@ -17,6 +17,7 @@ class Actividad extends Model
 
 protected $fillable = [
         'nombactividad',
+        'observacion',
         'fecha_inicio',
         'fecha_cierre',
         'hora_inicio',

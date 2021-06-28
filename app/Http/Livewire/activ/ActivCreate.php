@@ -10,7 +10,7 @@ use Livewire\WithFileUploads;
 class ActivCreate extends Component
 {
     use WithFileUploads;
-    public $nombactividad, $fecha_inicio, $fecha_cierre, $hora_inicio, $hora_finalizacion, $ent_responsable, $lugar_id, $image;
+    public $nombactividad, $fecha_inicio, $fecha_cierre, $hora_inicio, $hora_finalizacion, $ent_responsable, $lugar_id, $image, $observacion;
     //validaciones
     protected $rules = [
 
@@ -53,7 +53,8 @@ class ActivCreate extends Component
                 'hora_finalizacion' => $this->hora_finalizacion,
                 'ent_responsable' => $this->ent_responsable,
                 'lugar_id' => $this->lugar_id,
-                'image' => $image
+                'image' => $image,
+                'observacion'=>$this->observacion,
             ]);
 
             session()->flash('message', 'Actividad registrada correctamente');
@@ -70,7 +71,8 @@ class ActivCreate extends Component
                 'hora_inicio',
                 'hora_finalizacion',
                 'ent_responsable',
-                'image'
+                'image',
+                'observacion'
 
 
             ]);
