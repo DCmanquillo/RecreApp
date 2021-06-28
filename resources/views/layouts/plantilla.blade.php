@@ -47,7 +47,7 @@
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-              <li><a class="dropdown-item" style="color:#0B1054" href="#">QUIÉNES SOMOS</a></li>
+              <li><a class="dropdown-item" style="color:#0B1054" href="{{route('mision')}}">QUIÉNES SOMOS</a></li>
 
             </ul>
           </li>

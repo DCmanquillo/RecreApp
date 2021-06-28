@@ -269,6 +269,7 @@ return [
         [
             'text' => 'Actividades',
             'icon' => 'fab fa-accessible-icon',
+            'can' => 'Instructor.create',
             'submenu' => [
                 [
                     'text' => 'Registrar Actividad',
@@ -309,10 +310,12 @@ return [
         [
             'text' => 'Instructor',
             'icon' => 'fab fa-accessible-icon',
+            'can' => 'Instructor.create',
             'submenu' => [
                 [
                     'text' => 'Registrar Instructor',
                     'route'  => 'Instructor.create',
+
                 ],
                 [
                     'text'  => 'Gestionar Instructor',
@@ -329,8 +332,8 @@ return [
             'icon' => 'fas fa-users-cog',
             'submenu' => [
                 [
-                    'text' => 'Registrar Actividad',
-                    'route'  => 'Activ.index',
+                    'text' => 'Mis Actividad',
+                    'route'  => 'Beneficiario.index',
                 ]
 
             ]
