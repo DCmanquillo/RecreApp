@@ -46,7 +46,9 @@
                  NUESTRO PROPOSITO
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" style="color:#000" href="#">MISIÓN</a></li>
+
+              <li><a class="dropdown-item" style="color:#0B1054" href="#">QUIÉNES SOMOS</a></li>
+
             </ul>
           </li>
 
@@ -61,10 +63,10 @@
                                 PERSONAS MAYORES
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" style="color:#000" href="{{route('quedate')}}">ME QUEDO EN CASA</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="{{route('noticias')}}">NOTICIAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="{{route('cifras')}}">CIFRAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="{{route('documentos')}}">DOCUMENTOS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">DOCUMENTOS</a></li>
                                 </ul>
                               </li>
 
@@ -89,7 +91,7 @@
 
                                         @if (Route::has('register'))
                                             <a href="{{ route('register') }}" class="btn btn-info btn-block"
-                                                style="background-color: #1A962B; color: aliceblue;">REGISTRARSE</a>
+                                                style="background-color: #0B1054; color: aliceblue;">REGISTRARSE</a>
                                         @endif
                                     </div>
                                 @endauth
