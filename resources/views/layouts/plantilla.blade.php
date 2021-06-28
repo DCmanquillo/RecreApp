@@ -62,10 +62,10 @@
                                 PERSONAS MAYORES
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" style="color:#000" href="#">ME QUEDO EN CASA</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">NOTICIAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">CIFRAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#000" href="#">DOCUMENTOS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('quedate')}}">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('noticias')}}">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('cifras')}}">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#000" href="{{route('documentos')}}">DOCUMENTOS</a></li>
                                 </ul>
                               </li>
 
