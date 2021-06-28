@@ -1,6 +1,7 @@
 @extends('layouts.plantilla')
 
 @section('contenido-principal')
+<link href="{{ asset('css/contac.css') }}" rel="stylesheet">
 
 <section class="mt-5">
     <div class="d-flex">
@@ -9,11 +10,10 @@
                 <div class="col-lg-6">
                     <h2 class="display-4 fw-bolder" style="color: #0B1054;">Contáctanos</h2>
                     <hr class="bg-info">
-                    <p class="text-start lead mb-4" style="color: #0B1054;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad iste quidem expedita aliquam magnam, quae sed accusamus soluta a at
-                        sunt impedit alias possimus molestias repellat et, iure vitae!</p>
-                    <p class="" style="color: #1A962B  ;">Calle 27 an #2-809</p>
-                    <p class="text-start" style="color: #1A962B  ;" >312273930303303</p>
-                    <p class="text-star" style="color: #1A962B  ;">clturamovil@gmail.com</p>
+                    <p class="text-start lead mb-4" style="color: #0B1054;">Para mayor informaion comunicarse con nosotros a travez del correo electronico, o por medio de nuestro numero telefonico: </p>
+                    <p class="" style="color: #0B1054  ;">Calle 27 an #2-809</p>
+                    <p class="text-start" style="color: #0B1054  ;" >3122739066</p>
+                    <p class="text-star" style="color: #0B1054  ;">recreadultos.ga@gmail.com</p>
                 </div>
                 <div class="col-lg-6 d-flex">
                     <!--formularios-->
@@ -34,7 +34,7 @@
                         <div class="col-12">
                             <label for="inputAddress" class="form-label fw-bolder">Motivo de contacto</label>
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Pregunta</option>
+                                <option selected>pregunta</option>
                                 <option value="1">Sugerencia</option>
                                 <option value="2">Queja</option>
                                 <option value="3">Reclamo</option>

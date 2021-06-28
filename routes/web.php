@@ -6,10 +6,8 @@ use App\Http\Controllers\activController;
 use App\Http\Controllers\lugarController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ContactosController;
-use App\Http\Controllers\DocumentosController;
-use App\Http\Controllers\CifrasController;
-use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\MequedoencasaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +30,7 @@ Route::get('/documentos' ,[DocumentosController::class,'index'])->name('document
 Route::get('/cifras' ,[CifrasController::class,'index'])->name('cifras');
 Route::get('/noticias' ,[NoticiasController::class,'index'])->name('noticias');
 Route::get('/quedate' ,[MequedoencasaController::class,'index'])->name('quedate');
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
