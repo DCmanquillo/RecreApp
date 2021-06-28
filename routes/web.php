@@ -7,7 +7,9 @@ use App\Http\Controllers\lugarController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ContactosController;
 use App\Http\Controllers\MequedoencasaController;
-
+use App\Http\Controllers\NoticiasController;
+use App\Http\Controllers\CifrasController;
+use App\Http\Controllers\DocumentosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
