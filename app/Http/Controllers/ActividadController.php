@@ -11,6 +11,9 @@ class ActividadController extends Controller
 {
     public function index()
     {
+        // $datosActividad = Actividad::latest()
+        // ->take(3)
+        // ->get();
         $datosActividad = Actividad::all();
         return view('componentes.actividad', compact('datosActividad'));
     }

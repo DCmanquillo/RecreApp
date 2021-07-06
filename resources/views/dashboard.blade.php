@@ -3,12 +3,12 @@
 @section('title', 'Admin')
 
 @section('content_header')
-    <h1>Hola Admin</h1>
+    <h1>Hola Bienvenido</h1>
 @stop
 
 @section('content')
 
-
+<img src="img/imagen8.jpg" alt="">
 
 @stop
 
