@@ -20,9 +20,11 @@
 </head>
 
 <body>
+  
 
+    <link href="{{ asset('css/piantilla.css') }}" rel="stylesheet">
     <i class="fa-solid fa-house"></i>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo1.png" class="img-fluid" width="230px" height="180px"
                     alt=""></a>
@@ -110,7 +112,7 @@
         </div>
     </main>
 
-    <footer class="bg-light text-dark">
+    <footer class="bg-primary text-dark">
         <div class="container">
             <nav class="row justify-content-center">
                 <a href="#" class="col-12 col-md-3 text-reset text-uppercase d-flex
