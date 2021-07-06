@@ -29,16 +29,23 @@
                             <th>Opciones</th>
                         </thead>
                         <tbody>
+
                             @foreach ($datosActividad as $actividad)
                             <tr>
                                 <td>{{$actividad->nombactividad}}</td>
                                 <td>{{$actividad->fecha_inicio}}</td>
                                 <td>{{$actividad->hora_inicio}}</td>
-                                <td > @foreach ($datosLugar as $lugar)
-                                    {{$lugar->nombre_lugar}}</td>
-                                    @endforeach
-                        @endforeach
-
+                                <td>
+                                    
+                                </td>
+                                {{-- <td>{{$lugar->nombre_lugar}}</td> --}}
+                     <td>
+                          <div class="row">
+                 <div class="col-lg-6 col-sm-6 ">
+                <a class="btn btn-primary">Cancelar</i></a>
+                  </div>
+               </td>
+  @endforeach
 @stop
 
 @section('css')

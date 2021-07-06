@@ -3,13 +3,14 @@
 @section('title', 'RecreAdultos')
 
 @section('content_header')
-    <h1>REcreAdultos</h1>
+    <h1>RecreAdultos</h1>
 @stop
 
 @section('content')
     <p>
-        bienvenido Rol nn
+        Hola Bienvenido
     </p>
+    <img src="img/bd.jpg" alt="">
 @stop
 
 @section('css')

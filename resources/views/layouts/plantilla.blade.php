@@ -13,6 +13,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.css')}}">
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -66,7 +67,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">ME QUEDO EN CASA</a></li>
-                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">NOTICIAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="{{route('noticias')}}">NOTICIAS</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">CIFRAS</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="#">DOCUMENTOS</a></li>
                                 </ul>
@@ -147,24 +148,24 @@
 
 
                 </ul>
-                <ul class="col-10 col-md-3 list-unstyled">
+                <ul class="col-4 col-md-2 list-unstyled">
                     <li class="font-weight-bold text-uppercase">
-                        <h5>Redes Sociales</h5>
+                        <h5>Redes Sociales</h5><br>
                     </li>
                     <li class="d-flex justify-content-between">
                         <a href="https://www.facebook.com/" class="text-reset">
-                            <i class="icon-facebook-squared" style="color:rgba(50, 38, 216, 0.726); font-size: 30px"></i></a>
+                            <i class="fab fa-facebook-square" style="color:#0B1054; font-size: 30px"></i></a>
 
                         <a target="_blank" href="https://www.instagram.com/" class="text-reset">
-                            <i class="fab fa-instagram" style="color:rgba(33, 40, 136, 0.404); font-size: 30px"></i></a>
+                            <i class="fab fa-instagram" style="color:#0B1054; font-size: 30px"></i></a>
 
                         <a target="_blank"
                             href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
                             class="text-reset">
-                            <i class="icon-mail" style="color:rgba(28, 62, 214, 0.568); font-size: 30px"></i></a>
+                            <i class="fas fa-envelope-square" style="color:#0B1054; font-size: 30px"></i></a>
 
                         <a target="_blank" href="https://www.youtube.com/" class="text-reset">
-                            <i class="icon-youtube-play" style="color:rgba(23, 59, 218, 0.747); font-size: 30px"></i></a>
+                            <i class="fab fa-youtube-square" style="color:#0B1054; font-size: 30px"></i></a>
 
 
                     </li>
