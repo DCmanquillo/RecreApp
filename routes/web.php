@@ -7,6 +7,7 @@ use App\Http\Controllers\lugarController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ContactosController;
 use App\Http\Controllers\BeneficiarioController;
+
 use App\Http\Controllers\misionController;
 use App\Http\Controllers\MequedoencasaController;
 use App\Http\Controllers\NoticiasController;

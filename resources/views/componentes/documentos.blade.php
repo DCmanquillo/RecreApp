@@ -1,6 +1,8 @@
 @extends('layouts.plantilla')
 
 @section('contenido-principal')
+
+<link href="{{ asset('css/contac.css') }}" rel="stylesheet">
 <section>
     <div class="d-flex justify-content-center align-items-center">
         <div class="container mt-4">
@@ -9,11 +11,11 @@
                     <div class="list-group list-group-flush">
                         <h3>ENLACES</h3>
                         <hr class="bg-light">
-                        <button type="button"  class="list-group-item list-group-item-action " aria-current="true"><a href="#" class="text-decoration-none" style="color: black;" >Que hacemos</a></button>
-                        <button type="button" class="list-group-item list-group-item-action " ><a href="#" class="text-decoration-none" style="color: black;" >Quienes somos</a></button>
-                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color: black;" >Vision</a></button>
-                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color: black;" >Mision</a></button>
-                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color: black;" >Nuestros Principios</a></button>
+                        <button type="button"  class="list-group-item list-group-item-action " aria-current="true"><a href="#" class="text-decoration-none" style="color:#0B1054;" >Que hacemos</a></button>
+                        <button type="button" class="list-group-item list-group-item-action " ><a href="#" class="text-decoration-none" style="color: #0B1054;" >Quienes somos</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color:#0B1054;" >Vision</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color:#0B1054;" >Mision</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="#" class="text-decoration-none" style="color:#0B1054;" >Nuestros Principios</a></button>
                        
                     </div>
                 </div>

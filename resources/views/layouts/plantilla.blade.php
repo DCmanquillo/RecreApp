@@ -92,7 +92,7 @@
 
                                         @if (Route::has('register'))
                                             <a href="{{ route('register') }}" class="btn btn-info btn-block"
-                                                style="background-color: #1A962B; color: aliceblue;">REGISTRARSE</a>
+                                                style="background-color: #0B1054; color: aliceblue;">REGISTRARSE</a>
                                         @endif
                                     </div>
                                 @endauth
