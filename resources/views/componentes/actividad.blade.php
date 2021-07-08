@@ -8,7 +8,7 @@
 
     <div class="row">
         @foreach ($datosActividad as $actividad)
-            <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+            <div class="col-sm-12 col-md-4 col-lg-4 p-3">
                 <div class="card">
                     <div class="card-header">
                         <h1>{{$actividad->nombactividad}}</h1>
@@ -23,10 +23,10 @@
                     </div>
 
 
-                    <button type="button" class="btn btn-info btn-block "
+                    <a href="{{route('Beneficiario.create', $actividad->id)}}"> <button type="button" class="btn btn-info btn-block "
                     style="background-color: #0B1054; color: aliceblue;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Ver Mas<!doctype html>
-                    </button>
+                     Ver Mas<!doctype html>
+                    </button></a>
                 </div>
             </div>
         @endforeach
