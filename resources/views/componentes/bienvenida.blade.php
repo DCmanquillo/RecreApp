@@ -52,14 +52,14 @@
         </div>
         <div class="col-lg-6 d-flex">
           <div class="aling-delf-center my-5 px-4">
-            <h1 class="display-4 fw-bold mb-5">Crear tu cuenta es muy facil</h1>
+            <h1 class="display-4 fw-bold mb-5">Crear tu cuenta es muy Facil</h1>
             <ul class="list-unstyled">
               <li class="d-flex mb-4">
 
                 <p class="text-primary lead fw-bold step">1</p>
                 <div class="ms-3">
                   <p class="lead fw-bold">Paso 1</p>
-                  <p>Es muy sencillo, solo ingresa tu correo</p>
+                  <p>Es Muy sencillo, solo Ingresa tu Correo</p>
                 </div>
               </li>
               <li class="d-flex mb-4">
@@ -67,7 +67,7 @@
                 <p class="text-primary lead fw-bold step">2</p>
                 <div class="ms-3">
                   <p class="lead fw-bold">Paso 2</p>
-                  <p>Crea una contraseña</p>
+                  <p>Crea una Contraseña</p>
                 </div>
               </li>
               <li class="d-flex mb-4">
@@ -75,7 +75,7 @@
                 <p class="text-primary lead fw-bold step">3</p>
                 <div class="ms-3">
                   <p class="lead fw-bold">Paso 3</p>
-                  <p>Disfruta ayudando a tu cuerpo a mejorar tu salud</p>
+                  <p>Disfruta Ayudando a tu Cuerpo a Mejorar tu Salud</p>
                 </div>
               </li>
             </ul>
@@ -92,9 +92,9 @@
         <div class="row">
           <div class="col-lg-7 d-flex">
             <div class="aling-self-center p-5">
-            <h2 class="display-4 fw-bold mb-4">Como encontrar actividades para ti?</h2>
-            <p class="lead mb-4">La tercera edad es una etapa <br>
-               de la vida en
+            <h2 class="display-4 fw-bold mb-4">Como Encontrar Actividades para ti?</h2>
+            <p class="lead mb-4">La tercera edad es una Etapa <br>
+               De la vida en
               la que debemos poner mucha atención tanto en la salud física,
               como en la salud mental y socio-afectiva. La actividad física
               puede actuar sobre las tres vertientes y ayudarnos a vivir una
@@ -102,7 +102,7 @@
               con cuidado y atendiendo a
               nuestras características físicas y a nuestras
                necesidades particulares.</p>
-            <a href="#" class="btn btn-primary">conoce mas</a>
+            <a href="#" class="btn btn-primary">Conoce Mas</a>
           </div>
 
           </div>
@@ -117,8 +117,8 @@
   </div>
   <div class="d-flex py-5">
     <div class="container align-self-center">
-      <h2 class="display-4 fw-bold ">Todos los servicios</h2>
-      <p class="lead mb-5 fw-bold">Conoce lo que te ofrecemos</p>
+      <h2 class="display-4 fw-bold ">Todos los Servicios</h2>
+      <p class="lead mb-5 fw-bold">Conoce lo que te Ofrecemos</p>
       <div class="row gx-5 justify-content-center">
         <div class="col-lg-4 py-4">
           <a href="#" class="text-decoration-none">
@@ -127,7 +127,7 @@
               <h2 class="flex-grow-1 text-dark fw-bold text-center">Actividad 1</h2>
 
             </div>
-            <p class="lead text-dark fw-bold mb-4 text-center">lo que debes saber sobre</p>
+            <p class="lead text-dark fw-bold mb-4 text-center">Lo que debes saber sobre</p>
 
 
 
@@ -140,7 +140,7 @@
               <h2 class="flex-grow-1 text-dark fw-bold text-center">Actividad 2</h2>
 
             </div>
-            <p class="lead text-dark fw-bold mb-4 text-center">lo que debes saber sobre</p>
+            <p class="lead text-dark fw-bold mb-4 text-center">Lo que debes saber sobre</p>
 
 
 
@@ -153,7 +153,7 @@
               <h2 class="flex-grow-1 text-dark fw-bold text-center">Actividad 3</h2>
 
             </div>
-            <p class="lead text-dark fw-bold mb-4 text-center">lo que debes saber sobre</p>
+            <p class="lead text-dark fw-bold mb-4 text-center">Lo que debes saber sobre</p>
 
 
           </a>

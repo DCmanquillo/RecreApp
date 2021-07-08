@@ -27,13 +27,15 @@ Use a more readable tab size (opinionated).
      tab-size: 4;
 }
 
+
 /**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 
+
 html {
-  line-height: 1.15; /* 1 */
+  line-height:1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -432,6 +434,16 @@ hr {
  *
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
+
+ 
+.container-flex-properties {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9c6fc8e;
+}
+
 
 img {
   border-style: solid;
