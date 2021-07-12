@@ -113,7 +113,7 @@
         </div>
     </main>
 
-    <footer class="bg-primary text-dark">
+    <footer class="bg-info text-dark">
         <div class="container">
             <nav class="row justify-content-center">
                 <a href="#" class="col-12 col-md-3 text-reset text-uppercase d-flex

@@ -28,11 +28,11 @@
                 </div>
                 <div class="col-md-8">
                     <h2 class="text-center" style="font-family: 'Questrial', sans-serif; color:#0B1054">QUIENES SOMOS</h2>
-                    <P class="mt-5" style="font-family: 'Questrial', sans-serif; font-size:x-large;">buscamos potenciar la participacion e integracion de los mayores
+                    <P class="mt-5" style="font-family: 'Questrial', sans-serif; font-size:x-large;">Buscamos potenciar la participacion e integracion de los mayores
                         en la comunidad con ctividades socio-culturales, ocupacionales, artisticas
                         y recreativas para estimular el mantenimiento activo tanto a nivel fisico
                         como psicologico de las personas mayores, el crear nuevos espacios nuevos
-                        y formas nuevas para la ocupacion del ocio y tiempo libre
+                        y formas nuevas para la ocupacion del ocio y tiempo libre.
                     </P>
                 
                     <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
@@ -50,7 +50,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Derecho</button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">normas que expresan o incorporan valores superiores que el ordenamiento  jurídico considera como últimos. Directrices son normas que estipulan la obligación de perseguir determina- dos fines.</div>
+                                <div class="accordion-body">Normas que expresan o incorporan valores superiores que el ordenamiento  jurídico considera como últimos. Directrices son normas que estipulan la obligación de perseguir determina- dos fines.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -79,11 +79,11 @@
                 <div class="col-md-8 ">
                     <div class="row">
                         <div class="col-lg-6 mt-5" style="font-family: 'Questrial', sans-serif;"><h3>QUE HACEMOS?</h3>
-                        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magni quasi perferendis dolorem! Numquam dolores commodi culpa ipsa nesciunt, facilis, unde id maxime velit voluptatibus facere possimus animi voluptatem laborum.</P></div>
+                        <P>Contribuir con la dibulgacon de la informacion de las diferentes actividades que se reliazan por parte de la entidades guburnamentales y fundaciones.</P></div>
                         <div class="col-lg-6 mt-5"><h3>MISION</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iste numquam laborum nobis sit optio aperiam sunt cumque aliquid quia, ipsum repellendus, culpa dignissimos reiciendis aut debitis iusto vitae consequatur.</P>
+                        <P>El propósito de nuestro aplicativo web es colocar al alcance las actividades lúdicas deportivas y sociales para los adultos mayores de la ciudad de Popayán  a través de una herramienta tecnológica que permite dar a conocer las diferentes actividades programadas para el adulto mayor con el fin de mejorar la calidad de vida y poder hacer más llevadera y feliz la vejez de nuestros ancianos.</P>
                         <h3>VISION</h3>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iure consequuntur eum in quibusdam eos ullam minima, reiciendis similique quidem accusantium, sapiente porro nobis. Et facere fugit illo in optio!</P></div>
+                        <P>Para el año 2023 constituirnos como una plataforma a nivel regional  donde se permita converger a los distintos actores gobierno y fundaciones  logrando que lo adultos mayores  tengan un mejor intercambio de comunicación; permitiéndoles informarse de forma oportuna sobre las actividades que se realizarán en cada una de las entidades, para con esto los adultos mayores se encuentren más activos física, emocional y mentalmente.</P></div>
                     </div>
                 </div>
             </div>
