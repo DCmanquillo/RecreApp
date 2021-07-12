@@ -28,7 +28,7 @@ class BeneficiarioController extends Controller
      */
     public function create()
     {
-        //
+       return view('Beneficiario.ActiIndividual');
     }
 
     /**
@@ -85,5 +85,10 @@ class BeneficiarioController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function Beneficiario_id()
+    {
+
     }
 }

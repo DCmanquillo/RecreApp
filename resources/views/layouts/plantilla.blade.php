@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  
+
 
     <link href="{{ asset('css/piantilla.css') }}" rel="stylesheet">
     <i class="fa-solid fa-house"></i>
@@ -66,10 +66,10 @@
                                 PERSONAS MAYORES
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">ME QUEDO EN CASA</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="{{route('quedate')}}">ME QUEDO EN CASA</a></li>
                                   <li><a class="dropdown-item" style="color:#0B1054;" href="{{route('noticias')}}">NOTICIAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">CIFRAS</a></li>
-                                  <li><a class="dropdown-item" style="color:#0B1054;" href="#">DOCUMENTOS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="{{route('cifras')}}">CIFRAS</a></li>
+                                  <li><a class="dropdown-item" style="color:#0B1054;" href="{{route('documentos')}}">DOCUMENTOS</a></li>
                                 </ul>
                               </li>
 
